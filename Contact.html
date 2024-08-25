@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>My Contact Details</h1>
+        <p>My fictional address</p>
+        <p>Phone Number: 01055339647</p>
+        <p>Email: bike4812@hanyang.ac.kr</p>
+
+        <!-- 4. Make Boxes User can Input-->
+        <hr>
+        <form action="mailto:bike481227@gmail.com" method="post" enctype="text/plain"> <!-- Default action: Go to index.html
+                                                       Revise it as 'I send a message to that!'
+                                                       method: post(same as requests.post)
+                                                       enctype: show only plain text-->
+            <label>Your Name:</label> <!-- Set Text Box-->
+            <input type="text" name="yourName"><br> <!-- Get text input-->
+
+            <label>Your Email:</label>
+            <input type="email" name="yourEmail"><br> <!-- Get email input, it requires 'Email Format'-->
+            <!-- Make A test area, It require row and cols-->
+            <!-- Using 'name', it shows text as variable--> 
+            <label>Your Message:</label>
+            <textarea name="name" name="yourMessage", row="10", cols="80"></textarea><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
